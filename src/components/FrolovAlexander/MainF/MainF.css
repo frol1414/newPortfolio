@@ -1,0 +1,11 @@
+.container {
+    background: rgb(77, 77, 77);
+    position: relative;
+    left: 250px;
+    width: calc(100% - 250px);
+
+}
+.card1 {
+    width: calc(80% - 250px)!important;
+    margin: 0 auto;
+}
