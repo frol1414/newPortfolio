@@ -4,7 +4,7 @@ import './AboutMe.css';
 
 const AboutMe = () => (
   <div className="about-me">
-    <h2 className="about-me-title">Обо мне</h2>
+    <h2 className="about-me-title">About me</h2>
     <section className="about-me-container">
       <div className="about-me-container-desc">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad alias amet commodi dolorem dolores dolorum

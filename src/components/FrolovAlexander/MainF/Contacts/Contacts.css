@@ -1,0 +1,31 @@
+.contacts {
+    margin-top: 30px;
+}
+.contacts-title {
+    color: black;
+    text-align: right;
+    margin: 0 50px 20px 0;
+    border-bottom: 1px solid black;
+    font-size: 30px;
+}
+.contacts-container {
+    padding: 0 50px 10px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.contacts-logo {
+    min-width: 30%;
+}
+.contacts-email {
+    min-width: 30%;
+    color: black;
+    text-align: center;
+}
+.contacts-email p {
+    margin: 0;
+}
+.contacts-socials {
+    min-width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
