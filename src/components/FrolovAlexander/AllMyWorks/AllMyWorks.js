@@ -19,6 +19,9 @@ export default class MyWorks extends Component {
       {title: 'Nuthdioc', stack: 'Vue, Laravel', image: posh, fullImage: fullApollo, url: ''},
       {title: 'Admin panel Evol', stack: 'Vue, Python', image: apollo, fullImage: fullApollo, url: ''},
       {title: 'Admin panel Evol', stack: 'javascript', image: portfolio, fullImage: fullApollo, url: ''},
+      {title: 'Nuthdioc', stack: 'Vue, Laravel', image: posh, fullImage: fullApollo, url: ''},
+      {title: 'Admin panel Evol', stack: 'Vue, Python', image: apollo, fullImage: fullApollo, url: ''},
+      {title: 'Admin panel Evol', stack: 'javascript', image: portfolio, fullImage: fullApollo, url: ''},
     ],
     loading: true,
   };
@@ -41,23 +44,24 @@ export default class MyWorks extends Component {
   render () {
     return (
       <div className="my-works">
-          <div className="container">
-            {
-              this.state.loading
-              ? <div className="loader"><Loader/></div>
-                : <React.Fragment>
-                    <h2 className="my-works-title">My works</h2>
+        <div className="row justify-content-center">
+          <div className="col-lg-8">
+            <div className="">
+              {
+                this.state.loading
+                  ? <div className="loader"><Loader/></div>
+                  : <React.Fragment>
+                    {/*<h2 className="my-works-title">My works</h2>*/}
                     <div className="row">
                       {this.renderWorks()}
                     </div>
-                
-                    <Footer/>
-                </React.Fragment>
-            }
-          </div>
-          
         
- 
+                    <Footer/>
+                  </React.Fragment>
+              }
+            </div>
+          </div>
+        </div>
       </div>
     )
   }

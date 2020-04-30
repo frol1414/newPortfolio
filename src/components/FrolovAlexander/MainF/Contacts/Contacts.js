@@ -2,23 +2,24 @@ import React from "react";
 
 import './Contacts.css';
 import SocialLinks from "../../UI/SocialLinks/SocialLinks";
+import aboutMeImg from "../../../../images/FA/111.jpg";
 
 const Contacts = () => (
-  <div className="contacts">
-    <h2 className="contacts-title">Contacts</h2>
-    <div className="contacts-container">
-      <div className="contacts-logo">
-        <h2>LOGO</h2>
-      </div>
-      
-      <div className="contacts-email">
-        <p>E-Mail: frol1414@gmail.com</p>
-        <p>Phone: +7(931)971-55-83</p>
-      </div>
-      
-      <div className="contacts-socials">
-        <SocialLinks />
-      </div>
+  <div className="row justify-content-center contacts">
+    <div className="col-lg-8">
+      <section className="contacts-container box-card">
+        <div className="contacts-title">
+          <p>Contacts</p>
+        </div>
+        
+        <span className="limiter"></span>
+  
+        <div className="contacts-block">
+          <p>E-Mail: frol1414@gmail.com</p>
+          <p>Phone: +7(931)971-55-83</p>
+          <SocialLinks />
+        </div>
+      </section>
     </div>
   </div>
 );
