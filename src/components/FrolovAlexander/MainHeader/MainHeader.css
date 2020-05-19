@@ -1,29 +1,11 @@
-.main-header {
-    position: fixed;
-    width: 100%;
-    z-index: 10000;
-    height: 70px;
-    background-color: #e0e0e0;
-    padding: 0 10px;
-}
 .main-header-card {
     display: flex;
     align-items: center;
-
     background-color: white;
-    /*border-radius: 5px;*/
-    /*box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);*/
-    margin-top: 10px;
+    margin-bottom: 20px;
     height: 60px;
-
+    position: relative;
 }
-
-
-
-
-
-
-
 .main-header-logo {
     font-weight: 400;
     text-transform: uppercase;
@@ -32,18 +14,32 @@
 }
 .main-header-logo span {
     font-weight: 700;
-    text-shadow: 0 3px 8px rgba(0, 0, 0, .3);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
 }
+.main-header-links {
+    margin-left: auto;
+}
+.main-header-links-logo,
 .main-header-links-item {
-    color: black;
+    color: #212121;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
+    font-weight: 500;
     margin: 0 10px;
-}
-.main-header-links-item:hover {
-    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
 }
 
+.main-header-links-item:hover {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    transition: .3s;
+}
+.main-header-links-logo {
+    text-decoration: none!important;
+    color: black!important;
+}
 @media (max-width: 414px) {
     .main-header-logo {
         font-size: 16px;

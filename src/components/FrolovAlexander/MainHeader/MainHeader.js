@@ -16,23 +16,24 @@ export default class MainHeader extends Component {
   
   render() {
     return (
-      <section className="main-header">
-        <div className="row justify-content-center">
-          <div className="col-lg-8">
-            <div className="main-header-card box-card">
-              <div className="main-header-logo">Alexander <span>Frolov</span></div>
-              <div className="main-header-links">
-                <NavLink to="/Frolov-Alexander" className="main-header-links-item">
-                  About me
-                </NavLink>
-                <NavLink to="/Frolov-Alexander/all-my-works" className="main-header-links-item">
-                  My works
-                </NavLink>
-              </div>
+      <div className="row justify-content-center">
+        <div className="col-lg-10">
+          <div className="main-header-card box-card">
+            <NavLink to="/Frolov-Alexander/" className="main-header-links-logo">
+            <div className="main-header-logo">Alexander <span>Frolov</span></div>
+            </NavLink>
+            
+            <div className="main-header-links">
+              <NavLink to="/Frolov-Alexander/about" className="main-header-links-item">
+                About me
+              </NavLink>
+              <NavLink to="/Frolov-Alexander/all-my-works" className="main-header-links-item">
+                My works
+              </NavLink>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     )
   }
 }

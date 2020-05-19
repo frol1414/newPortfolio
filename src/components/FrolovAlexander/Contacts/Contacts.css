@@ -1,0 +1,26 @@
+.contacts {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contacts-container {
+    position: relative;
+    background: white;
+    padding: 0 50px 10px 30px;
+}
+.contacts-block {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contacts-block p {
+    margin: 0;
+    color: #403535;
+    font-weight: 500;
+}
+@media (max-width: 414px) {
+    .contacts-block {
+        display: flex;
+       flex-direction: column;
+    }
+}
