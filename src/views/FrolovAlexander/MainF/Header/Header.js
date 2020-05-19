@@ -1,16 +1,25 @@
 import React from "react";
 import './Header.css';
+import {NavLink} from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="main-card">
-      <div className="box-one"> </div>
-      <div className="box-two"> </div>
-      <div className="box-three"> </div>
-      
-      <div className="main-title-block">
-        <p className="main-title">FRONT-END <span>DEVELOPER</span></p>
-      <p className="main-title main-title-transform">FRONT-END <span>DEVELOPER</span></p>
+    <div className="row justify-content-center">
+      <div className="col-lg-10">
+        <div className="header-card">
+          <NavLink to="/Frolov-Alexander/" className="header-links-logo">
+            <div className="header-logo">Alexander <span>Frolov</span></div>
+          </NavLink>
+        
+          <div className="header-links">
+            <NavLink to="/Frolov-Alexander/about" className="header-links-item">
+              About me
+            </NavLink>
+            <NavLink to="/Frolov-Alexander/all-my-works" className="header-links-item">
+              My works
+            </NavLink>
+          </div>
+        </div>
       </div>
     </div>
 )};

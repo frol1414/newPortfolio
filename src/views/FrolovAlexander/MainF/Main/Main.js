@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import './Main.css';
 // import SocialLinks from "../../UI/SocialLinks/SocialLinks";
-import aboutMeImg from "../../../../images/FA/alex2.jpg";
+// import background from "../../../../images/FA/1.jpg";
 
 class Main extends Component {
   
@@ -62,21 +62,15 @@ class Main extends Component {
   
   render() {
     return (
-      <div className="row main-content">
-        <div className="col-lg-6 main-content-img">
-          <img src={aboutMeImg} alt="alex"/>
-        </div>
-        <div className="col-lg-6 main-desc">
-          
-          <article>
-            <p className="main-desc__p">Hello, I'm Alexander Frolov, frontend-developer (and some backend) based in St. Petersburg, Russia.</p>
-          </article>
+      <div className="main-card">
+        <div className="main-title-block">
+          <p className="main-title"><div></div>FRONT-END <span>DEVELOPER</span></p>
           
           <div className='main-desc-skills'>
-          <span id='text'></span>
-          <div className='console-underscore' id='console'>&#95;</div>
+            <span id='text'></span>
+            <div className='console-underscore' id='console'>&#95;</div>
           </div>
-          
+  
           <a aria-label='word' className='main-content-btn ' data-text='Download CV' href='#'>
             <span>T</span>
             <span>h</span>
@@ -87,7 +81,6 @@ class Main extends Component {
           </a>
           
         </div>
-        
       </div>
     )
   }

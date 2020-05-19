@@ -1,4 +1,36 @@
-
+.main-card {
+    position: relative;
+}
+.main-title-block {
+    position: absolute;
+    top: 165px;
+    right: 50px;
+}
+.main-title {
+    color: black;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: right;
+    margin: 0;
+    position: relative;
+    z-index: 100;
+    text-shadow: 0 3px 8px rgba(0,0,0,.3);
+}
+.main-title span {
+    font-weight: 500;
+    color: white;
+}
+.main-title div {
+    width: 290px;
+    height: 70px;
+    background-color: black;
+    position: absolute;
+    right: -13px;
+    top: -6px;
+    z-index: -1;
+    transform: skew(-10deg);
+}
 .hidden {
     opacity:0;
 }
@@ -6,14 +38,11 @@
     font-size:2em;
     text-align:center;
     height:100px;
-    width:100%;
     display:block;
     position:absolute;
     color:white;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
+    top:70px;
+    right:10px;
     margin:auto;
 }
 .console-underscore {
@@ -26,10 +55,9 @@
 .main-content {
     margin-top: 260px;
 }
-.main-content img{
-    width: 100%;
-}
 .main-desc {
+    width: 50%;
+    margin: 0 30px 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,12 +75,10 @@
     color: #212121;
     text-decoration: none;
     position: absolute;
-    left: 50%;
-    top: 60%;
-    transform: translate(-50%, -50%);
-    background: #BDBDBD;
-    padding: 20px;
-    width: 250px;
+    top: 135px;
+    right: -10px;
+    padding: 10px 0;
+    width: 180px;
     text-align: center;
     border-radius: 3px;
 }

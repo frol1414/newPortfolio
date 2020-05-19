@@ -1,3 +1,6 @@
-.main-container {
-    padding-top: 10px;
+.start-content {
+    background: url("../../../images/FA/3.jpg") top center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
 }

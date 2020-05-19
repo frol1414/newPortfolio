@@ -1,56 +1,73 @@
-.main-card {
-    padding: 0!important;
-    /*display: flex;*/
-    background-color: white;
+.header-card {
+    display: flex;
+    align-items: center;
+
+    margin: 10px 0 20px 0;
+    height: 60px;
     position: relative;
+    padding: 10px 20px;
 }
-.box-one {
-    position: absolute;
-    border-radius: 3px 3px 0 0;
-    height: 210px;
-    width: 100%;
-    background: #bdbdbd;
-}
-.box-two {
-    border-top: 220px solid #ff9800;
-    border-right: 50px solid transparent;
-    height: 0;
-    width: 77%;
-    position: absolute;
-    border-radius: 3px 0 0 0;
-    margin-right: auto;
-}
-.box-three {
-    border-top: 230px solid #64B5F6;
-    border-right: 50px solid transparent;
-    height: 0;
-    width: 35%;
-    position: absolute;
-    border-radius: 3px 0 0 0;
-    margin-right: auto;
-}
-.main-title-block {
-    width: 100%;
-    position: absolute;
-    top: 165px;
-    right: 20px;
-}
-.main-title {
-    color: black;
-    font-size: 50px;
+.header-logo {
     font-weight: 400;
-    line-height: 50px;
-    text-align: right;
-    margin: 0;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin: 0 100px 0 0;
 }
-.main-title span {
+.header-logo span {
+    font-weight: 700;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+}
+.header-links {
+    margin-left: auto;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);;
+}
+.header-links-logo,
+.header-links-item {
+    color: #212121;
+    text-decoration: none;
+    font-size: 14px;
     font-weight: 500;
-    text-shadow: 0 3px 8px rgba(0,0,0,.3)
+    margin: 0 10px;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
 }
-.main-title-transform {
-    position: absolute;
-    right: 0;
-    top: 40px;
-    color: rgba(255,255,255,-0.7);
-    transform: scale(1, -1);
+
+.header-links-item:hover {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    transition: .3s;
 }
+.header-links-logo {
+    text-decoration: none!important;
+    color: black!important;
+}
+@media (max-width: 414px) {
+    .header-logo {
+        font-size: 16px;
+        margin: 0 20px 0 0;
+    }
+    .header-links {
+        display: flex;
+    }
+    .header-links-item {
+        font-size: 14px;
+        margin: 0 5px;
+    }
+}
+@media (max-width: 360px) {
+    .header-logo {
+        font-size: 16px;
+        margin: 0;
+    }
+    .header-links {
+        display: flex;
+    }
+    .header-links-item {
+        font-size: 16px;
+    }
+}
+

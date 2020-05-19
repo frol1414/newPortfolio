@@ -25,18 +25,21 @@ class Works extends Component {
   
   render() {
     return (
-      <div className=" main-works text-center">
-        <h3 className="block-title">Some of my super duper works</h3>
-        
-        <div className="main-works-block">
-          {this.renderWorks()}
+      <div className="row justify-content-center">
+        <div className="col-lg-10">
+          <div className=" main-works text-center">
+            <h3 className="block-title">Some of my super duper works</h3>
+            
+            <div className="main-works-block">
+              {this.renderWorks()}
+            </div>
+            
+            <div className="work-btn">
+              <a>See all my super duper briliant fantastic works</a>
+              <p className="work-btn-desc">*Perhaps not so brilliant, but definitely excellent</p>
+            </div>
+          </div>
         </div>
-        
-        <div className="work-btn">
-          <a>See all my super duper briliant fantastic works</a>
-          <p className="work-btn-desc">*Perhaps not so brilliant, but definitely excellent</p>
-        </div>
-        
       </div>
     );
   }

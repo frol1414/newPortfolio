@@ -35,7 +35,8 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0 50px 50px 50px;
+    padding: 0 0 30px 0;
+    margin: 0 -15px;
 }
 .work-btn {
     display: flex;
@@ -43,22 +44,40 @@
     align-items: center;
 }
 .work-btn a {
-    display: inline-block;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 16px;
-    padding: 0 10px;
-    color: #757575;
-    position: relative;
+    color: white;
+    background-color: #1976D2;
+    border-color: #1976D2;
+    padding: 8px 18px;
     border-radius: 3px;
-    border: 1px solid #757575;
-
+    outline: none;
+    position: relative;
+    z-index: 910;
+    overflow: hidden;
+    cursor: pointer;
+}
+.work-btn a:after {
+    background-color: #212121;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transition: all 500ms;
+    border-radius: 3px;
 }
 .work-btn a:hover {
-    transition: .3s ease-in;
+    color: white;
+    border-color: #1976D2;
+}
+.work-btn a:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
 }
 .work-btn-desc {
     font-size: 14px;
     color: gray;
-    margin-left: -115px;
+    margin-left: -60px;
 }

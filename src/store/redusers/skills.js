@@ -28,7 +28,7 @@ const initialState = {
       focus: true,
       list: [
         {id: 1, title: 'Rcvbcbdfbdfb'},
-        {id: 2, title: 'Fgbfgndfhnhnhn'},
+        {id: 2, title: 'I sing... very bad'},
         {id: 3, title: 'Rgfbgfgcsd'}
       ]
     },
@@ -44,6 +44,16 @@ const initialState = {
       ]
     },
   },
+  
+  fFacts: [
+    {title: "I love to cook and travel by car.", desc: "dfbdfbdgbdg"},
+    {title: "My mom says I'm a very smart boy.", desc: "dgbfgfn"},
+    {title: "I do not snore - I will not interfere with colleagues.", desc: "gnggcg"},
+    {title: "I listen to music, always, everywhere.", desc: "dfdf"},
+    {title: "My grandmother says I'm a handsome guy.", desc: "dfbdgn"},
+    {title: "I do not drink alcohol and do not smoke cigarettes.", desc: "dfbfgnf"},
+  ],
+  
 };
 
 export default function skillsReducer(state = initialState, action) {
