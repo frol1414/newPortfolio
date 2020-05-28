@@ -8,7 +8,7 @@ const SkillsBlock = ({skills}) => {
   }
   
   return (
-    <div className="col-lg-3 col-md-12 my-skills-container">
+    <div className="col-lg-3 col-md-6 my-skills-wrapper">
       <div className={className}>
         {skills.focus ? <span className="my-skills-block__span"></span> : null}
         <span className="my-skills-block__title">{skills.title}</span>

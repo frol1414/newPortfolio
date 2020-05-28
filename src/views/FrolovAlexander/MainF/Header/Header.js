@@ -13,10 +13,10 @@ const Header = () => {
         
           <div className="header-links">
             <NavLink to="/Frolov-Alexander/about" className="header-links-item">
-              About me
+              About
             </NavLink>
             <NavLink to="/Frolov-Alexander/all-my-works" className="header-links-item">
-              My works
+              Works
             </NavLink>
           </div>
         </div>

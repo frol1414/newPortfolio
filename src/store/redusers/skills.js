@@ -46,19 +46,16 @@ const initialState = {
   },
   
   fFacts: [
-    {title: "I love to cook and travel by car.", desc: "dfbdfbdgbdg"},
-    {title: "My mom says I'm a very smart boy.", desc: "dgbfgfn"},
-    {title: "I do not snore - I will not interfere with colleagues.", desc: "gnggcg"},
-    {title: "I listen to music, always, everywhere.", desc: "dfdf"},
-    {title: "My grandmother says I'm a handsome guy.", desc: "dfbdgn"},
-    {title: "I do not drink alcohol and do not smoke cigarettes.", desc: "dfbfgnf"},
+    {id: 1, title: "I love to cook and travel by car.", desc: "Currently visited 17 countries."},
+    {id: 2, title: "My mom says I'm a very smart boy.", desc: "And grandma also says."},
+    {id: 3, title: "I do not snore - I will not interfere with colleagues.", desc: "Seriously, no one has complained yet"},
+    {id: 4, title: "I listen to music, always, everywhere.", desc: "Any genres, any music, in the mood"},
+    {id: 5, title: "My grandmother says I'm a handsome guy.", desc: "That's just friends say the opposite )"},
+    {id: 6, title: "I do not drink alcohol and do not smoke cigarettes.", desc: "Healthy lifestyle"},
   ],
   
 };
 
 export default function skillsReducer(state = initialState, action) {
-  switch (action.type) {
-    default:
-      return state
-  }
+  return state
 }

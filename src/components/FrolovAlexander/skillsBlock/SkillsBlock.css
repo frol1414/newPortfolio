@@ -39,3 +39,21 @@
 .focus {
     min-height: 360px!important;
 }
+@media (max-width: 414px) {
+    .my-skills-wrapper {
+        margin: 0 auto 10px auto;
+        width: 80%;
+    }
+    .my-skills-list__item {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 320px) {
+    .my-skills-wrapper {
+        width: 100%;
+    }
+    .my-skills-list__item {
+        width: 80%;
+    }
+}

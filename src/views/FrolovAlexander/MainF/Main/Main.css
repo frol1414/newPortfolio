@@ -21,7 +21,8 @@
     font-weight: 500;
     color: white;
 }
-.main-title div {
+.main-title-span {
+    display: block;
     width: 290px;
     height: 70px;
     background-color: black;
@@ -82,7 +83,6 @@
     text-align: center;
     border-radius: 3px;
 }
-
 .main-content-btn span {
     display: inline-block;
     min-width: 0.3em;

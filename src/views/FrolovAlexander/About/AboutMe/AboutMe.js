@@ -1,11 +1,11 @@
 import React from "react";
 import aboutMeImg from '../../../../images/FA/222.JPG'
-import first from '../../../../images/FA/77.JPG'
-import second from '../../../../images/FA/22.jpg'
-import third from '../../../../images/FA/33.jpg'
-import four from '../../../../images/FA/44.JPG'
-import five from '../../../../images/FA/55.JPG'
-import six from '../../../../images/FA/66.JPG'
+import first from '../../../../images/FA/1.jpg'
+import second from '../../../../images/FA/2.jpg'
+import third from '../../../../images/FA/3.jpg'
+import four from '../../../../images/FA/4.jpg'
+import five from '../../../../images/FA/5.jpg'
+import six from '../../../../images/FA/6.jpg'
 import './AboutMe.css';
 
 const AboutMe = () => (
@@ -19,7 +19,7 @@ const AboutMe = () => (
         <div className="row">
           <div className="col-lg-6 about-me-img-block">
             <div className="about-me-img">
-              <img src={aboutMeImg}/>
+              <img src={aboutMeImg} alt="Frolov Alexander"/>
             </div>
           </div>
           
@@ -34,34 +34,34 @@ const AboutMe = () => (
         </div>
   
         <div className="row about-me__foto-block">
-          <div className="col-lg-2 col-md-4 col-6 ">
+          <div className="col-lg-2 col-md-4 col-12 foto-block__wrapper">
             <div className="about-me__foto">
-              <img src={first}/>
+              <img src={first} alt="Frolov Alexander"/>
             </div>
           </div>
-          <div className="col-lg-2 col-md-4 col-6 ">
+          <div className="col-lg-2 col-md-4 col-12 foto-block__wrapper">
             <div className="about-me__foto">
-              <img src={second}/>
+              <img src={second} alt="Frolov Alexander"/>
             </div>
           </div>
-          <div className="col-lg-2 col-md-4 col-6 ">
+          <div className="col-lg-2 col-md-4 col-12 foto-block__wrapper">
             <div className="about-me__foto">
-              <img src={third}/>
+              <img src={third} alt="Frolov Alexander"/>
             </div>
           </div>
-          <div className="col-lg-2 col-md-4 col-6 ">
+          <div className="col-lg-2 col-md-4 col-12 foto-block__wrapper">
             <div className="about-me__foto">
-              <img src={four}/>
+              <img src={four} alt="Frolov Alexander"/>
             </div>
           </div>
-          <div className="col-lg-2 col-md-4 col-6 ">
+          <div className="col-lg-2 col-md-4 col-12 foto-block__wrapper">
             <div className="about-me__foto">
-              <img src={five}/>
+              <img src={five} alt="Frolov Alexander"/>
             </div>
           </div>
-          <div className="col-lg-2 col-md-4 col-6 ">
+          <div className="col-lg-2 col-md-4 col-12 foto-block__wrapper">
             <div className="about-me__foto">
-              <img src={six}/>
+              <img src={six} alt="Frolov Alexander"/>
             </div>
           </div>
         </div>

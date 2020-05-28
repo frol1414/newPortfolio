@@ -19,8 +19,15 @@
     font-weight: 500;
 }
 @media (max-width: 414px) {
+    .contacts {
+        margin-top: 0;
+    }
     .contacts-block {
         display: flex;
-       flex-direction: column;
+        flex-direction: column;
+    }
+    .contacts-block p {
+        margin-bottom: 10px;
+        font-size: 14px;
     }
 }

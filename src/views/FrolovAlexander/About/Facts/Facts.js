@@ -12,16 +12,11 @@ const Facts = (props) => (
           {
             props.facts.map(el => {
               return (
-                <div className="facts__item">
-                  <div className="facts__point">
-                    <div className="facts__point-badge"></div>
-                  </div>
-                  <div className="facts__content">
-                    <p className="facts__text">
-                      {el.title}
-                    </p>
-                    <span className="facts__desc">{el.desc}</span>
-                  </div>
+                <div className="box-card facts__item" key={el.id}>
+                  <blockquote className="blockquote">
+                    <p className="mb-0">{el.title}</p>
+                    <footer className="blockquote-footer">{el.desc}</footer>
+                  </blockquote>
                 </div>
               )
             })

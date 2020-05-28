@@ -1,19 +1,20 @@
-import React, {Component} from "react";
+import React from "react";
 import {Switch, Route} from 'react-router-dom';
 import MainF from "./MainF/MainF";
 import AllMyWorks from "./AllMyWorks/AllMyWorks";
-import './FrolovAlexander.css';
 import About from "./About/About";
+import OneWork from "./OneWork/OneWork";
+import './FrolovAlexander.css';
 
+const FrolovAlexander = () => {
 
-export default class FrolovAlexander extends Component {
-  render() {
-    return (
-      <Switch>
-        <Route path="/Frolov-Alexander/all-my-works" component={AllMyWorks} />
+  return (
+     <Switch>
+        <Route path="/Frolov-Alexander/all-my-works" exact component={AllMyWorks}/>
+        <Route path="/Frolov-Alexander/all-my-works/:id" component={OneWork} />
         <Route path="/Frolov-Alexander/about" component={About} />
         <Route path="/" component={MainF} />
-      </Switch>
-    )
-  }
+    </Switch>
+  )
 }
+export  default FrolovAlexander

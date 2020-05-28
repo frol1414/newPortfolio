@@ -1,3 +1,6 @@
+::-webkit-scrollbar {
+    width: 0;
+}
 .block-title {
     display: inline-block;
     text-transform: uppercase;
@@ -22,4 +25,18 @@
 }
 .block-title:after {
     right: -35px;
+}
+@media (max-width: 414px) {
+    .block-title {
+        margin: 20px 0 10px 0;
+    }
+}
+.animation-wrapper {
+    opacity: 0;
+    transform: scale(1.1);
+}
+.animation-wrapper.animation {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 700ms, transform 700ms;
 }

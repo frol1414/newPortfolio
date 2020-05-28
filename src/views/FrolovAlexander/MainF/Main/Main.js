@@ -1,14 +1,12 @@
 import React, {Component} from "react";
 import './Main.css';
-// import SocialLinks from "../../UI/SocialLinks/SocialLinks";
-// import background from "../../../../images/FA/1.jpg";
 
 class Main extends Component {
   
   componentDidMount() {
-    consoleText(['Vue.js / Vuex', 'React / Redux', 'Laravel', 'Node.js'], '' +
+    consoleText(['Vue.js / Vuex', 'React / Redux', 'Angular', 'React Native', 'TypeScript', 'Laravel', 'Node.js'], '' +
       'text',
-      ['black','black','black', 'black']);
+      ['black']);
 
     function consoleText(words, id, colors) {
       if (colors === undefined) colors = ['#fff'];
@@ -64,7 +62,7 @@ class Main extends Component {
     return (
       <div className="main-card">
         <div className="main-title-block">
-          <p className="main-title"><div></div>FRONT-END <span>DEVELOPER</span></p>
+          <p className="main-title"><span className="main-title-span"></span>FRONT-END <span>DEVELOPER</span></p>
           
           <div className='main-desc-skills'>
             <span id='text'></span>
@@ -79,7 +77,6 @@ class Main extends Component {
             <span>k</span>
             <span>s</span>
           </a>
-          
         </div>
       </div>
     )

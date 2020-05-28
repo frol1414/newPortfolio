@@ -1,5 +1,5 @@
 import React from "react";
-
+import AnimationHoc from "../../../components/FrolovAlexander/AnimationHoc";
 import Contacts from "../../../components/FrolovAlexander/Contacts/Contacts";
 import Main from "./Main/Main";
 import Works from "./Works/Works";
@@ -8,8 +8,9 @@ import './MainF.css'
 import Header from "./Header/Header";
 
 const MainF = () => {
+  
   return (
-    <React.Fragment>
+    <AnimationHoc>
       <section className="start-content">
         <div className="row">
           <div className="col-lg-12">
@@ -18,11 +19,10 @@ const MainF = () => {
           </div>
         </div>
       </section>
-      
+  
       <Works />
       <Contacts />
-      
-    </React.Fragment>
+    </AnimationHoc>
   )};
 
 export default MainF;

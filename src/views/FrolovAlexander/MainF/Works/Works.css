@@ -70,6 +70,7 @@
 .work-btn a:hover {
     color: white;
     border-color: #1976D2;
+    text-decoration: none;
 }
 .work-btn a:hover::after {
     width: 100%;
