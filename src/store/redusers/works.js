@@ -6,11 +6,11 @@
 4. EvolTerminal
 5.
  */
-const initialState = {
-  fWorks: [
+const initialState =  [
     {
       id: 1,
       title: 'React Native Posts',
+      mainTech: 'React Native',
       shortDesc: 'Small training project on React Native.',
       desc: `This is a small React Native application that helped me understand a lot of React Native techniques and
       methods. The application contains native components, store, navigation etc.`,
@@ -23,11 +23,13 @@ const initialState = {
       mainImage: '/images/works/rn-posts/111.JPG',
       github: 'https://github.com/frol1414/rn-posts',
       url: null,
-      main: true
+      main: true,
+      class: 'yellow'
     },
     {
       id: 2,
       title: 'Terminal for Evolpay (PWA)',
+      mainTech: 'Vue.js',
       shortDesc: 'Admin panel fo Evolpay.',
       desc: `An application for couriers and retail outlets to display a QR-code for payment to customers. The
             application contains statistics on operations, history of operations, the choice of various organizations and units.`,
@@ -40,11 +42,13 @@ const initialState = {
       mainImage: '/images/works/trm.evolpay/1.jpg',
       github: null,
       url: null,
-      main: true
+      main: true,
+      class: 'blue'
     },
     {
       id: 3,
       title: 'Evolpay (Admin panel)',
+      mainTech: 'Vue.js',
       shortDesc: 'Admin panel fo Evolpay.',
       desc: `Admin panel for the Evolpay project with viewing all statistics on any project entities,
       the ability to administer and adjust some entities`,
@@ -56,11 +60,13 @@ const initialState = {
       mainImage: '/images/works/trm.evolpay/trm.jpg',
       github: null,
       url: null,
-      main: false
+      main: true,
+      class: 'pink'
     },
     {
       id: 4,
       title: 'Evolpay',
+      mainTech: 'Javascript',
       shortDesc: 'Service for receiving funds for any field of activity without equipment costs.',
       desc: `A service for receiving funds for any field of activity without the cost of equipment using QR-codes.
              The project is aimed at merchant acquiring, Internet acquiring, couriers, self-service machines, etc`,
@@ -74,7 +80,8 @@ const initialState = {
       mainImage: '/images/works/trm.evolpay/3.jpg',
       github: null,
       url: 'http://evolpay.ru',
-      main: true
+      main: true,
+      class: 'yellow'
     },
     {
       id: 5,
@@ -95,8 +102,8 @@ const initialState = {
     
     
     
-  ],
-};
+  ]
+
 
 export default function worksReducer(state = initialState, action) {
    return state

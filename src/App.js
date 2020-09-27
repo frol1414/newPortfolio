@@ -1,15 +1,28 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import {Switch, Route} from 'react-router-dom';
-import MainPage from './views/MainPage/MainPage';
+import Header from "./components/Header/Header";
+import Main from "./pages/Main/Main";
+import About from "./pages/About/About";
+import Works from "./pages/Works/Works";
+import Contacts from "./pages/Contacts/Contacts";
+
 import FrolovAlexander from "./views/FrolovAlexander/FrolovAlexander";
+
 import './App.css';
 
 function App() {
   return (
-    <Switch>
-      <Route path="/Frolov-Alexander" component={FrolovAlexander} />
-      <Route path="/" component={MainPage} />
-    </Switch>
+    <Fragment>
+      <Header />
+      <Switch>
+        <Route path="/Frolov-Alexander" component={FrolovAlexander} />
+        <Route path="/" component={Main} exact/>
+        <Route path="/about" component={About} />
+        <Route path="/works" component={Works} />
+        <Route path="/contacts" component={Contacts} />
+      </Switch>
+    </Fragment>
+    
   );
 }
 

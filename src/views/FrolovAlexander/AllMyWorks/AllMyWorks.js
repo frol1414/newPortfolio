@@ -35,7 +35,7 @@ const MyWorks = (props) => {
 
 function mapStateToProps(state) {
   return {
-    works: state.works.fWorks,
+    works: state.works.works,
   }
 }
 

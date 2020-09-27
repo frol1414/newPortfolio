@@ -1,5 +1,5 @@
 import React from "react";
-import aboutMeImg from '../../../../images/FA/222.JPG'
+import aboutMeImg from '../../../../images/222.JPG'
 import first from '../../../../images/FA/1.jpg'
 import second from '../../../../images/FA/2.jpg'
 import third from '../../../../images/FA/3.jpg'

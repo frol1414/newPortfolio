@@ -1,0 +1,12 @@
+.header-list {
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px;
+}
+.header-list__item {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    color: #2D2D2D;
+    margin-left: 70px;
+}
