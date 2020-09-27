@@ -1,17 +1,19 @@
-.App {
-  text-align: center;
+:root {
+  --text-color: #2D2D2D;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page__title {
+  font-weight: 900;
+  font-size: 86px;
+  line-height: 101px;
+  text-align: right;
+  color: var(--text-color);
+  margin-bottom: 40px;
+  padding: 0 50px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.page-header-wrapper {
+  position: relative;
 }
+<<<<<<< HEAD
 
 .App-header {
   background-color: #282c34;
@@ -22,20 +24,31 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+=======
+.page-header__title {
+  font-weight: 900;
+  font-size: 350px;
+  line-height: 410px;
+  color: #F3F3F3;
+  text-transform: uppercase;
+  margin-left: -70px;
+>>>>>>> alternative-style
 }
-
-.App-link {
-  color: #61dafb;
+.page-header__desc {
+  position: absolute;
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 53px;
+  color: var(--text-color);
+  left: 40px;
+  max-width: 900px;
+  margin-bottom: 50px;
+  top: 205px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.yellow {
+  background: #FAC606;
 }
+<<<<<<< HEAD
 
 .box-card {
   border-radius: 3px;
@@ -50,4 +63,11 @@
   display: block;
   border-bottom: 1px solid #eee;
   margin: 0 auto;
+=======
+.blue {
+  background: #4DB4ED;
+}
+.pink {
+  background: #F24C88;
+>>>>>>> alternative-style
 }

@@ -1,0 +1,16 @@
+.my-works-container {
+    padding-top: 10px;
+}
+.loader {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    padding: 90px 0 0 0;
+    margin: 0;
+}
+.my-works-title {
+    padding-left: 20px;
+    margin: 0;
+    font-size: 30px;
+}

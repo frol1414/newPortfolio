@@ -1,15 +1,10 @@
-.main-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 70px;
+.main-header-card {
     display: flex;
     align-items: center;
-    background: #e0e0e0;
-    box-shadow: 0 3px 8px #e0e0e0;
-    border-bottom: black;
-    padding: 0 30px;
-    z-index: 1000;
+    background-color: white;
+    margin-bottom: 20px;
+    height: 60px;
+    position: relative;
 }
 .main-header-logo {
     font-weight: 400;
@@ -19,54 +14,62 @@
 }
 .main-header-logo span {
     font-weight: 700;
-    text-shadow: 0 3px 8px rgba(0, 0, 0, .3);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
 }
+.main-header-links {
+    margin-left: auto;
+}
+.main-header-links-logo,
 .main-header-links-item {
-    color: black;
+    color: #212121;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
+    font-weight: 500;
     margin: 0 10px;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
 }
 .main-header-links-item:hover {
     text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    transition: .3s;
 }
-.main-header-socials {
-    margin-left: auto;
+.main-header-links-logo {
+    text-decoration: none!important;
+    color: black!important;
 }
-
-@media (max-width: 414px) {
-    .main-header {
-        justify-content: space-between;
+@media (max-width: 610px) {
+    .main-header-card {
+        padding: 20px 10px!important;
     }
     .main-header-logo {
         font-size: 16px;
         margin: 0 20px 0 0;
     }
+    .main-header-links-item {
+        margin: 0 5px;
+    }
+}
+@media (max-width: 414px) {
     .main-header-links {
         display: flex;
     }
     .main-header-links-item {
         font-size: 14px;
-        margin: 0 5px;
-    }
-    .main-header-socials {
-        display: none;
     }
 }
-@media (max-width: 360px) {
-    .main-header {
-        flex-direction: column;
-        justify-content: center;
-    }
+@media (max-width: 375px) {
     .main-header-logo {
-        font-size: 16px;
+        font-size: 14px;
         margin: 0;
     }
-    .main-header-links {
-        display: flex;
-    }
     .main-header-links-item {
-        font-size: 16px;
+        font-size: 12px;
     }
 }
+@media (max-width: 320px) {
+    .main-header-links-logo {
 
+    }
+}
