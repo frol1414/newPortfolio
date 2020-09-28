@@ -1,0 +1,10 @@
+import React from "react";
+import "./MainPage.css";
+
+const MainPage = () => (
+    <div>
+        <h1>MainPage</h1>
+    </div>
+)
+
+export default MainPage
