@@ -1,0 +1,4 @@
+.works-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}

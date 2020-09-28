@@ -1,13 +1,17 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
-import "./Header.css";
 
-const Header = () => (
-    <div>
-        <h1>Header</h1>
-        <NavLink to={'/Frolov-Alexander'} label="Frolov Alexander">Frolov Alex</NavLink>
-        <NavLink to={'/Frolova-Alexandra'} label="Frolova Alexandra">Frolova Alexandra</NavLink>
+import './Header.css'
+
+const Header = props => {
+  return (
+    <div className="header">
+      <div className="header-list">
+        <NavLink to="/about" className="header-list__item">About</NavLink>
+        <NavLink to="/works" className="header-list__item">Works</NavLink>
+        <NavLink to="/contacts" className="header-list__item">Contacts</NavLink>
+      </div>
     </div>
-)
+  )};
 
-export default Header
+export default Header;

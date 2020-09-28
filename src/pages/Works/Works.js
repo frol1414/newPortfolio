@@ -1,10 +1,21 @@
 import React from "react";
-import "./Works.css";
+import {connect} from "react-redux";
+import './Works.css'
+import WorkBlock from "../../components/WorkBlock/WorkBlock";
 
-const Works = () => (
-    <div>
-        <h1>Works</h1>
+const Works = props => {
+  const renderWorks = () => props.works.map((el) => (<WorkBlock data={el} key={el.id}/>))
+  return (
+    <div className="works">
+      <p className="page__title">Works</p>
+
+        <div className="works-wrapper">
+          {renderWorks()}
+        </div>
     </div>
-)
+  )};
 
-export default Works
+const mapStateToProps = (state) => ({works: state.works})
+
+export default connect(mapStateToProps)(Works)
+

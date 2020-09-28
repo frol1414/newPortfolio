@@ -1,0 +1,27 @@
+.work-block {
+    height: 340px;
+    width: 46%;
+    border-radius: 10px;
+    margin: 0 2% 60px 2%;
+    display: flex;
+    filter: drop-shadow(8px 8px 6px rgba(0, 0, 0, 0.25));
+}
+.work-block__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 35px;
+}
+.work-block__title {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 33px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+.work-block__desc {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+}

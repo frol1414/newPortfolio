@@ -1,0 +1,11 @@
+.my-skills {
+    margin-top: 20px;
+}
+.my-skills-container {
+    align-items: center;
+}
+@media (max-width: 414px) {
+    .my-skills {
+        margin-top: 0;
+    }
+}

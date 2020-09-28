@@ -1,0 +1,27 @@
+.about-block {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 100px;
+}
+.about-block img {
+    width: 100%;
+    max-width: 750px;
+    max-height: 420px;
+}
+.about-block article {
+    padding: 0 85px 0 40px;
+}
+.about-block__desc-first,
+.about-block__desc-second {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    color: #2D2D2D;
+}
+.about-block__desc-first {
+    margin-bottom: 90px;
+}
+.about-block__desc-second {
+    margin: 0;
+}
