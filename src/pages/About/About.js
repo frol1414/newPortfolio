@@ -2,12 +2,19 @@ import React from "react";
 import {connect} from "react-redux";
 import './About.css'
 import AboutBlock from "../../components/AboutBlock/AboutBlock";
+import alex from "../../images/Alex.svg";
+import {NavLink} from "react-router-dom";
 
 const About = props => {
   const renderSkills = (value) => value.list.map((el) => <li className="skills__item" key={el.id}> {el.title} </li>)
 
   return (
     <div className="about">
+      <div className="logo">
+        <NavLink to="/" className="logo__title">Alexander Frolov</NavLink>
+        <img src={alex} alt='Frolov Alexander'/>
+      </div>
+      
       <p className="page__title">About Me</p>
       
       <div className="page-header-wrapper">

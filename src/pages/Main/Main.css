@@ -1,8 +1,18 @@
+.main {
+    position: relative;
+    padding: 300px 0;
+}
+.main-logo {
+    position: absolute;
+    z-index: 2;
+    top: -421px;
+    left: -369px;
+}
 .main__title {
     max-width: 460px;
-    margin: 220px 50px 30px auto;
+    margin: 0 50px 30px auto;
     text-align: right;
-    padding: 0;
+    padding: 0!important;
 }
 .main__prof-title {
     font-weight: 900;

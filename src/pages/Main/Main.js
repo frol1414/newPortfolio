@@ -4,12 +4,18 @@ import WorkBlock from "../../components/WorkBlock/WorkBlock";
 import {connect} from "react-redux";
 import {NavLink} from "react-router-dom";
 import AboutBlock from "../../components/AboutBlock/AboutBlock";
+import alex from "../../images/Alex.svg";
 
 const Main = props => {
   const renderWorks = () => props.works.filter(item => item.main).map((el) => (<WorkBlock data={el} key={el.id}/>))
   
   return (
     <div className="main">
+      
+      <div className="main-logo">
+        <img src={alex} alt='Frolov Alexander'/>
+      </div>
+      
       <p className="page__title main__title">Alexander Frolov</p>
       <p className="main__prof-title">Front-End Developer</p>
       

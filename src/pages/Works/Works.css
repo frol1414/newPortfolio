@@ -1,3 +1,7 @@
+.works {
+    padding: 300px 0;
+    position: relative;
+}
 .works-wrapper {
     display: flex;
     flex-wrap: wrap;

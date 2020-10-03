@@ -1,6 +1,6 @@
 .contacts {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    /*margin-top: 20px;*/
+    /*margin-bottom: 20px;*/
 }
 .contacts-container {
     position: relative;
@@ -20,7 +20,7 @@
 }
 @media (max-width: 414px) {
     .contacts {
-        margin-top: 0;
+        /*margin-top: 0;*/
     }
     .contacts-block {
         display: flex;

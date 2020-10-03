@@ -1,6 +1,23 @@
 :root {
   --text-color: #2D2D2D;
 }
+.logo {
+  position: absolute;
+  z-index: 2;
+  top: -920px;
+  left: -385px;
+}
+.logo__title {
+  font-weight: 900;
+  font-size: 86px;
+  line-height: 101px;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 65px;
+  right: 284px;
+  max-width: 465px;
+  text-align: left;
+}
 .page__title {
   font-weight: 900;
   font-size: 86px;

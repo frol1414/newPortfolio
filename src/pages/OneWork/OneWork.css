@@ -1,0 +1,49 @@
+.one-work {
+    padding: 300px 0;
+    position: relative;
+}
+.work-preview {
+    display: flex;
+    height: 550px;
+}
+.work-images {
+    width: 50%;
+}
+.work-technical-sheet {
+    width: 50%;
+    margin-top: 65px;
+}
+.technical-sheet__title {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 59px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.work-technical-sheet ul {
+
+}
+.technical-sheet__item {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 47px;
+    color: #FFFFFF;
+    margin: 13px 0;
+}
+.work-info-block {
+    margin: 100px 0 0 180px;
+    max-width: 770px;
+}
+.work-info__title {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 59px;
+    color: #2D2D2D;
+    margin-bottom: 20px;
+}
+.work-info__desc {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 47px;
+    color: #2D2D2D;
+}

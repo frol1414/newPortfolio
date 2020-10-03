@@ -21,7 +21,7 @@ function App() {
         <Route path="/" component={Main} exact/>
         <Route path="/about" component={About} />
         <Route path="/works" component={Works} />
-        <Route path="/work/{id}" component={OneWork} />
+        <Route path="/work/:id" component={OneWork} />
         <Route path="/contacts" component={Contacts} />
       </Switch>
     </Fragment>

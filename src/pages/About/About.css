@@ -1,5 +1,6 @@
 .about {
-    padding: 0 0 300px 0;
+    padding: 300px 0;
+    position: relative;
 }
 .hello__desc {
     top: 220px;
