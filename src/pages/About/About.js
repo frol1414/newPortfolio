@@ -4,6 +4,7 @@ import './About.css'
 import AboutBlock from "../../components/AboutBlock/AboutBlock";
 import alex from "../../images/Alex.svg";
 import {NavLink} from "react-router-dom";
+import PhotoBlock from "../../components/PhotoBlock/PhotoBlock";
 
 const About = props => {
   const renderSkills = (value) => value.list.map((el) => <li className="skills__item" key={el.id}> {el.title} </li>)
@@ -19,10 +20,11 @@ const About = props => {
       
       <div className="page-header-wrapper">
         <p className="page-header__title">Hello</p>
-        <p className="page-header__desc">Hello, I’m Alexander Frolov, frontend-developer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p className="page-header__desc about-header__desc">Hello, I’m Alexander Frolov, Frontend-developer (and little Backend) who is currently in St.Petersburg, Russia. </p>
       </div>
       
       <AboutBlock />
+      {/*<PhotoBlock data={props.photos}/>*/}
       
       <div className="page-header-wrapper">
         <p className="page-header__title">Skills</p>
@@ -32,28 +34,28 @@ const About = props => {
       <div className="skills">
         <div className="backend">
           <p className="skills__title-left">{props.backEndList.title}</p>
-          <ul>
+          <ul className="about-list">
             {renderSkills(props.backEndList)}
           </ul>
         </div>
         
         <div className="frontend">
           <p className="skills__title-right">{props.frontEndList.title}</p>
-          <ul className="skills__list">
+          <ul className="skills__list about-list">
             {renderSkills(props.frontEndList)}
           </ul>
         </div>
         
         <div className="soft-skills">
           <p className="skills__title-left">{props.softSkillsList.title}</p>
-          <ul className="skills__list">
+          <ul className="skills__list about-list">
             {renderSkills(props.softSkillsList)}
           </ul>
         </div>
         
         <div className="other">
           <p className="skills__title-right">{props.otherList.title}</p>
-          <ul>
+          <ul className="about-list">
             {renderSkills(props.otherList)}
           </ul>
         </div>
@@ -68,6 +70,7 @@ const mapStateToProps = ({skills}) => {
     frontEndList: skills.frontEndList,
     softSkillsList: skills.softSkillsList,
     otherList: skills.otherList,
+    photos: skills.photos
   }
 }
 

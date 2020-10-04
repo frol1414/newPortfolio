@@ -19,20 +19,20 @@ const initialState = {
       {id: 3, title: 'Vue / Vuex'},
       {id: 4, title: 'React Native'},
       {id: 5, title: 'Typescript'},
+      {id: 6, title: 'jQuery'},
     ]
   },
   softSkillsList: {
-    title: 'Softskills',
+    title: 'Soft skills',
     desc: 'The most important skills at work! Really, the most important. No way without them.',
     focus: true,
     list: [
-      {id: 1, title: 'Communication'},
-      {id: 2, title: 'Teamwork'},
-      {id: 3, title: 'Adaptability'},
-      {id: 4, title: 'Time management'},
+      {id: 1, title: 'Communicative'},
+      {id: 2, title: 'Team worker'},
+      {id: 3, title: 'Adaptive'},
+      {id: 4, title: 'Time management skills'},
       {id: 5, title: 'Multitasking'},
-      {id: 6, title: 'Argumentation'},
-      {id: 7, title: 'Listening skills'}
+      {id: 6, title: 'Listening skills'}
     ]
   },
   otherList: {
@@ -47,6 +47,14 @@ const initialState = {
       {id: 5, title: 'PostgreSQL'},
     ]
   },
+  photos: [
+    {img: '/images/photo/1.jpg', class: "blue"},
+    {img: '/images/photo/2.jpg', class: "pink"},
+    {img: '/images/photo/3.jpg', class: "yellow"},
+    {img: '/images/photo/4.jpg', class: "yellow"},
+    {img: '/images/photo/5.jpg', class: "pink"},
+    {img: '/images/photo/6.jpg', class: "blue"},
+  ]
 }
 
 export default function skillsReducer(state = initialState, action) {

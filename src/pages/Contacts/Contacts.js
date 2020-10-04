@@ -22,10 +22,10 @@ const Contacts = props => {
         </div>
         
         <div className="contacts-socials blue">
-          <a href="https://github.com/frol1414">Github</a>
-          <a href="https://www.linkedin.com/in/alexander-frolov-a7976b163/">LinkedIn</a>
-          <a href="https://www.facebook.com/profile.php?id=100015746163178">Facebook</a>
-          <a href="https://www.instagram.com/alexander._.frolov/">Instagram</a>
+          <a href="https://github.com/frol1414" target="_blank" rel="noopener noreferrer">Github</a>
+          <a href="https://www.linkedin.com/in/alexander-frolov-a7976b163/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://www.facebook.com/profile.php?id=100015746163178" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.instagram.com/alexander._.frolov/" target="_blank" rel="noopener noreferrer">Instagram</a>
         </div>
       </div>
     </div>

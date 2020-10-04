@@ -1,6 +1,15 @@
 :root {
   --text-color: #2D2D2D;
 }
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0;
+}
+.container {
+  overflow: hidden;
+}
 .logo {
   position: absolute;
   z-index: 2;
@@ -17,6 +26,7 @@
   right: 284px;
   max-width: 465px;
   text-align: left;
+  text-decoration: none;
 }
 .page__title {
   font-weight: 900;
@@ -36,7 +46,7 @@
   line-height: 410px;
   color: #F3F3F3;
   text-transform: uppercase;
-  margin-left: -70px;
+  margin: 0 0 0 -65px;
 }
 .page-header__desc {
   position: absolute;
@@ -46,8 +56,7 @@
   color: var(--text-color);
   left: 40px;
   max-width: 900px;
-  margin-bottom: 50px;
-  top: 205px;
+  bottom: 200px;
 }
 .yellow {
   background: #FAC606;
@@ -57,4 +66,82 @@
 }
 .pink {
   background: #F24C88;
+}
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+@media (max-width: 768px) {
+  .logo {
+    left: -243px;
+    top: -530px;
+  }
+  .logo img {
+    width: 800px;
+    height: 800px;
+  }
+  .logo__title {
+    font-size: 60px;
+    line-height: 70px;
+    bottom: 95px;
+    right: 200px;
+    max-width: 330px;
+    text-align: right;
+  }
+  .page__title {
+    font-size: 50px;
+    line-height: 58px;
+    margin-bottom: 25px;
+    padding: 0 15px;
+  }
+  .page-header__title {
+    font-size: 150px;
+    line-height: 170px;
+    margin: 0 0 0 -25px;
+  }
+  .page-header__desc {
+    font-size: 21px;
+    line-height: 25px;
+    left: 30px;
+    max-width: 370px;
+    bottom: 80px;
+  }
+}
+@media (max-width: 414px) {
+  .logo {
+    left: -243px;
+    top: -530px;
+  }
+  .logo img {
+    width: 800px;
+    height: 800px;
+  }
+  .logo__title {
+    font-size: 60px;
+    line-height: 70px;
+    bottom: 95px;
+    right: 200px;
+    max-width: 330px;
+    text-align: right;
+  }
+  .page__title {
+    font-size: 45px;
+    line-height: 53px;
+  }
+  .page-header__title {
+    font-size: 93px;
+    line-height: 110px;
+    margin: 0 0 0 -15px;
+  }
+  .page-header__desc {
+    font-size: 13px;
+    line-height: 16px;
+    left: 20px;
+    max-width: 250px;
+    bottom: 50px;
+  }
 }

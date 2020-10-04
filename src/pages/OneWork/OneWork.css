@@ -3,25 +3,80 @@
     position: relative;
 }
 .work-preview {
-    display: flex;
     height: 550px;
+    position: relative;
+    margin-bottom: 200px;
 }
 .work-images {
     width: 50%;
+    height: 700px;
+    position: absolute;
+    top: calc(50% - 350px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.work__img {
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.35);
+}
+.slider-dots {
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.slider-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+.slider-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: #2D2D2D;
+    border-radius: 100%;
+}
+.slider-dots li.slick-active {
+    width: 30px;
+    height: 30px;
+    margin: 0 8px;
+}
+.slider-dots li.slick-active button {
+    width: 26px;
+    height: 26px;
 }
 .work-technical-sheet {
-    width: 50%;
-    margin-top: 65px;
+    width: 45%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 .technical-sheet__title {
     font-weight: 900;
     font-size: 50px;
     line-height: 59px;
     color: #FFFFFF;
-    margin-bottom: 20px;
-}
-.work-technical-sheet ul {
-
+    margin: 0;
 }
 .technical-sheet__item {
     font-weight: 300;
@@ -46,4 +101,15 @@
     font-size: 40px;
     line-height: 47px;
     color: #2D2D2D;
+}
+.work-info__link {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+.work-info__desc span {
+    font-weight: 500;
 }

@@ -2,14 +2,8 @@
     padding: 300px 0;
     position: relative;
 }
-.hello__desc {
-    top: 220px;
-}
-.skills__title {
-    margin-left: -65px;
-}
-.skills__desc {
-    top: 160px;
+.about-header__desc {
+    bottom: 0!important;
 }
 .skills {
     display: flex;
@@ -19,6 +13,7 @@
 .soft-skills, .other {
     height: 370px;
     padding: 35px;
+    box-sizing: border-box;
 }
 .backend {
     width: 25%;
@@ -71,4 +66,96 @@
 }
 .skills__list .skills__item {
     width: 50%;
+}
+@media (max-width: 768px) {
+    .about {
+        padding: 300px 0 100px 0;
+    }
+    .backend, .frontend,
+    .soft-skills, .other {
+        height: auto;
+        padding: 30px;
+        margin-bottom: 25px;
+    }
+    .about-list {
+        margin: 0;
+    }
+    .backend {
+        width: 45%;
+        margin-right: auto;
+    }
+    .frontend {
+        width: 80%;
+        margin-left: auto;
+    }
+    .soft-skills {
+        width: 80%;
+        margin-right: auto;
+    }
+    .other {
+        height: 250px;
+        width: 45%;
+        margin-left: auto;
+    }
+    .skills__title-left,
+    .skills__title-right {
+        font-size: 22px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+    .skills__item {
+        font-size: 21px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 414px) {
+    .about {
+        padding: 300px 0 50px 0;
+    }
+    .backend, .frontend,
+    .soft-skills, .other {
+        padding: 15px;
+    }
+    .other {
+        height: 210px;
+    }
+    .skills__title-left,
+    .skills__title-right {
+        font-size: 19px;
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+    .skills__item {
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 5px;
+    }
+    .skills__list .skills__item {
+        width: 75%;
+    }
+}
+@media (max-width: 320px) {
+    .backend, .frontend,
+    .soft-skills, .other {
+        padding: 10px;
+    }
+    .other {
+        height: 210px;
+        width: 55%;
+    }
+    .skills__title-left,
+    .skills__title-right {
+        font-size: 19px;
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+    .skills__item {
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 5px;
+    }
+    .skills__list .skills__item {
+        width: 90%;
+    }
 }

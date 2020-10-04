@@ -8,12 +8,13 @@
 }
 .contacts-phone {
     width: 63%;
-    height: 370px;
+    max-height: 370px;
     border-radius: 0 10px 10px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 70px;
+    box-sizing: border-box;
 }
 .contacts-phone p {
     font-weight: 900;
@@ -29,11 +30,12 @@
 }
 .contacts-socials {
     width: 35%;
-    height: 370px;
+    max-height: 370px;
     border-radius: 10px 0 0 10px;
     display: flex;
     flex-direction: column;
     padding: 26px 70px;
+    box-sizing: border-box;
 }
 .contacts-socials a {
     margin: 10px 0;
@@ -41,4 +43,64 @@
     font-weight: 900;
     font-size: 50px;
     line-height: 59px;
+}
+@media (max-width: 768px) {
+    .contacts {
+        padding: 300px 0 50px 0;
+    }
+    .contacts-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .contacts-phone {
+        padding: 20px 0 20px 50px;
+        margin-bottom: 20px;
+    }
+    .contacts-phone p {
+        font-size: 30px;
+        line-height: 33px;
+        margin: 10px 0;
+    }
+    .contacts-phone span {
+        font-size: 25px;
+        line-height: 28px;
+    }
+    .contacts-socials {
+        width: 45%;
+        padding: 26px 70px;
+        margin-left: auto;
+    }
+    .contacts-socials a {
+        margin: 10px 0;
+        font-size: 30px;
+        line-height: 33px;
+    }
+}
+@media (max-width: 414px) {
+    .contacts-phone {
+        width: 80%;
+        padding: 10px 0 10px 50px;
+        margin-bottom: 20px;
+    }
+    .contacts-phone p {
+        font-size: 18px;
+        line-height: 21px;
+        margin: 10px 0;
+    }
+    .contacts-phone span {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .contacts-socials {
+        padding: 10px 40px;
+    }
+    .contacts-socials a {
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+@media (max-width: 320px) {
+    .contacts-phone {
+        padding: 10px 0 10px 15px;
+    }
 }

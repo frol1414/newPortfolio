@@ -1,0 +1,19 @@
+.photo-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.photo-block__item {
+    width: 15%;
+    height: 120px;
+    position: relative;
+    background: #4DB4ED;
+    border-radius: 5px;
+}
+.photo-block__item img {
+    width: 100%;
+    position: absolute;
+    border-radius: 5px;
+    bottom: 5px;
+    right: 5px;
+}
