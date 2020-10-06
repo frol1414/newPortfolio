@@ -8,6 +8,7 @@
     cursor: pointer;
     transition: .3s;
     text-decoration: none;
+    overflow: hidden;
 }
 .work-block:hover {
     box-shadow: none;
@@ -44,6 +45,12 @@
     margin-left: auto;
     display: flex;
     align-items: flex-end;
+}
+@media (min-width: 1900px) {
+    .work-block {
+        width: 30%;
+        margin: 0 1.5% 60px 1.5%;
+    }
 }
 @media (max-width: 768px) {
     .work-block {

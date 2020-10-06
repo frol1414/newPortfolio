@@ -20,6 +20,19 @@
     color: #2D2D2D;
     margin-left: 70px;
     text-decoration: none;
+    transition: .3s;
+}
+.header-list__item:hover.item-about {
+    text-shadow: 2px 2px 2px #4DB4ED;
+    transition: .3s;
+}
+.header-list__item:hover.item-works {
+    text-shadow: 2px 2px 2px #F24C88;
+    transition: .3s;
+}
+.header-list__item:hover.item-contacts {
+    text-shadow: 2px 2px 2px #FAC606;
+    transition: .3s;
 }
 @media (max-width: 768px) {
     .header__btn {

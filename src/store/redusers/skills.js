@@ -14,12 +14,11 @@ const initialState = {
     desc: 'I like to create',
     focus: true,
     list: [
-      {id: 1, title: 'Javascript / ES6++'},
+      {id: 1, title: 'Vue / Vuex'},
       {id: 2, title: 'React / Redux / MobX'},
-      {id: 3, title: 'Vue / Vuex'},
-      {id: 4, title: 'React Native'},
-      {id: 5, title: 'Typescript'},
-      {id: 6, title: 'jQuery'},
+      {id: 3, title: 'React Native'},
+      {id: 4, title: 'Bootstrap / Materialize'},
+      {id: 5, title: 'jQuery'},
     ]
   },
   softSkillsList: {
@@ -40,23 +39,15 @@ const initialState = {
     desc: 'I do not know what to write here...',
     focus: false,
     list: [
-      {id: 1, title: 'Linux'},
-      {id: 2, title: 'Github'},
-      {id: 3, title: 'Webpack'},
-      {id: 4, title: 'WebSockets'},
-      {id: 5, title: 'PostgreSQL'},
+      {id: 1, title: 'Javascript'},
+      {id: 2, title: 'Typescript'},
+      {id: 3, title: 'Linux'},
+      {id: 4, title: 'Github'},
+      {id: 5, title: 'Webpack'},
+      {id: 6, title: 'PostgreSQL'},
     ]
-  },
-  photos: [
-    {img: '/images/photo/1.jpg', class: "blue"},
-    {img: '/images/photo/2.jpg', class: "pink"},
-    {img: '/images/photo/3.jpg', class: "yellow"},
-    {img: '/images/photo/4.jpg', class: "yellow"},
-    {img: '/images/photo/5.jpg', class: "pink"},
-    {img: '/images/photo/6.jpg', class: "blue"},
-  ]
+  }
 }
-
 export default function skillsReducer(state = initialState, action) {
   return state
 }

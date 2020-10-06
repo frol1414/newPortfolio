@@ -18,26 +18,25 @@ const Main = props => {
       
       <p className="page__title main__title">Alexander Frolov</p>
       <p className="main__prof-title">Front-End Developer</p>
-      
-      <div className="page-header-wrapper">
-        <p className="page-header__title">Works</p>
-        <p className="page-header__desc">Some of my super duper works</p>
-      </div>
-      
-      <div className="main-works">
-        {renderWorks()}
-      </div>
-
-      <NavLink to='/works' className="main-works__btn">See all my works</NavLink>
 
       <div className="page-header-wrapper">
         <p className="page-header__title">About</p>
-        <p className="page-header__desc">Some words about me</p>
+        <p className="page-header__desc about-header__desc">Hello, I’m Alexander Frolov, Frontend-developer (and little Backend) who is currently in St.Petersburg, Russia.</p>
       </div>
 
       <AboutBlock />
       <NavLink to='/about' className="main-about__btn">More information</NavLink>
 
+    <div className="page-header-wrapper">
+        <p className="page-header__title">Works</p>
+        <p className="page-header__desc">Some of my super duper works</p>
+    </div>
+
+    <div className="main-works">
+        {renderWorks()}
+    </div>
+
+    <NavLink to='/works' className="main-works__btn">See all my works</NavLink>
     </div>
   )};
 

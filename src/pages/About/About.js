@@ -2,6 +2,7 @@ import React from "react";
 import {connect} from "react-redux";
 import './About.css'
 import AboutBlock from "../../components/AboutBlock/AboutBlock";
+import FactsBlock from "../../components/FactsBlock/FactsBlock";
 import alex from "../../images/Alex.svg";
 import {NavLink} from "react-router-dom";
 import PhotoBlock from "../../components/PhotoBlock/PhotoBlock";
@@ -20,11 +21,11 @@ const About = props => {
       
       <div className="page-header-wrapper">
         <p className="page-header__title">Hello</p>
-        <p className="page-header__desc about-header__desc">Hello, I’m Alexander Frolov, Frontend-developer (and little Backend) who is currently in St.Petersburg, Russia. </p>
+        <p className="page-header__desc about-header__desc">Hello again, I’m Alexander Frolov, Frontend-developer (and little Backend) who is currently in St.Petersburg, Russia.</p>
       </div>
       
       <AboutBlock />
-      {/*<PhotoBlock data={props.photos}/>*/}
+      <PhotoBlock data={props.photos}/>
       
       <div className="page-header-wrapper">
         <p className="page-header__title">Skills</p>
@@ -60,17 +61,24 @@ const About = props => {
           </ul>
         </div>
       </div>
+
+        <div className="page-header-wrapper">
+            <p className="page-header__title">Facts</p>
+            <p className="page-header__desc">Some facts about me</p>
+        </div>
+        <FactsBlock data={props.facts}/>
       
     </div>
   )};
 
-const mapStateToProps = ({skills}) => {
+const mapStateToProps = ({skills, other}) => {
   return {
     backEndList: skills.backEndList,
     frontEndList: skills.frontEndList,
     softSkillsList: skills.softSkillsList,
     otherList: skills.otherList,
-    photos: skills.photos
+    photos: other.photos,
+    facts: other.facts
   }
 }
 

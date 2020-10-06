@@ -16,9 +16,9 @@ const Header = props => {
       {/*</svg>*/}
   
       <div className="header-list">
-        <NavLink to="/about" className="header-list__item">About</NavLink>
-        <NavLink to="/works" className="header-list__item">Works</NavLink>
-        <NavLink to="/contacts" className="header-list__item">Contacts</NavLink>
+        <NavLink to="/about" className="header-list__item item-about">About</NavLink>
+        <NavLink to="/works" className="header-list__item item-works">Works</NavLink>
+        <NavLink to="/contacts" className="header-list__item item-contacts">Contacts</NavLink>
       </div>
     </div>
   )};
