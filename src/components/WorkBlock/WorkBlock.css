@@ -42,9 +42,16 @@
     transition: .3s;
 }
 .work-block__img {
+    position: relative;
     margin-left: auto;
     display: flex;
     align-items: flex-end;
+}
+.work-block__img img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: 1s;
 }
 @media (min-width: 1900px) {
     .work-block {
@@ -59,7 +66,6 @@
     }
     .work-block__info {
         padding-left: 20px;
-        width: 75%;
     }
     .work-block__title {
         font-size: 17px;
@@ -69,6 +75,9 @@
     .work-block__desc {
         font-size: 15px;
         line-height: 17px;
+    }
+    .work-block__img {
+        width: 50%;
     }
     .work-block__img img {
         width: 100%;
@@ -82,7 +91,6 @@
     }
     .work-block__info {
         padding-left: 20px;
-        width: 75%;
     }
     .work-block__title {
         font-size: 17px;

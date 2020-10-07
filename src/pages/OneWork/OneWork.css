@@ -4,17 +4,16 @@
 }
 .work-preview {
     height: 550px;
-    position: relative;
     margin-bottom: 200px;
+    display: flex;
 }
 .work-images {
     width: 50%;
     height: 700px;
-    position: absolute;
-    top: calc(50% - 350px);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: -73px;
 }
 .work__img {
     margin: 20px auto;
@@ -112,4 +111,93 @@
 }
 .work-info__desc span {
     font-weight: 500;
+}
+@media (min-width: 1900px) {
+    .work-block {
+        width: 30%;
+        margin: 0 1.5% 60px 1.5%;
+    }
+}
+@media (max-width: 768px) {
+    .one-work {
+        padding: 300px 0 50px 0;
+    }
+    .work-preview {
+        margin-bottom: 100px;
+    }
+    .technical-sheet__title {
+        font-size: 40px;
+        line-height: 46px;
+    }
+    .technical-sheet__item {
+        font-weight: normal;
+        font-size: 34px;
+        line-height: 40px;
+    }
+    .work-info-block {
+        margin: 50px 50px 0 50px;
+    }
+    .work-info__title {
+        font-size: 40px;
+        line-height: 46px;
+    }
+    .work-info__desc {
+        font-size: 34px;
+        line-height: 40px;
+    }
+}
+@media (max-width: 414px) {
+    .one-work {
+        padding: 300px 0 50px 0;
+    }
+    .work-preview {
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .work-images {
+        order: 2;
+        width: 100%;
+        margin-top: 0;
+    }
+    .work-technical-sheet {
+        height: auto;
+        align-items: center;
+        padding: 20px 0;
+        order: 1;
+        width: 100%;
+    }
+    .work-technical-sheet ul {
+        margin: 5px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .technical-sheet__title {
+        font-size: 25px;
+        line-height: 29px;
+    }
+    .technical-sheet__item {
+        width: 50%;
+        font-size: 21px;
+        line-height: 24px;
+        margin: 5px 0;
+    }
+    .work-info-block {
+        margin: 20px 20px 0 20px;
+    }
+    .work-info__title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .work-info__desc {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+@media (max-width: 375px) {
+    .work-images {
+        order: 2;
+        width: 100%;
+        margin-top: -30px;
+    }
 }

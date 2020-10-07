@@ -43,6 +43,11 @@
     font-weight: 900;
     font-size: 50px;
     line-height: 59px;
+    transition: .3s;
+}
+.contacts-socials a:hover {
+    color: #212121;
+    transition: .3s;
 }
 @media (max-width: 768px) {
     .contacts {
