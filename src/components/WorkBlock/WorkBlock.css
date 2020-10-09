@@ -53,6 +53,33 @@
     bottom: 0;
     transition: 1s;
 }
+.work-block__img .first {
+    opacity: 1;
+    transition: .5s;
+}
+.work-block__img .second {
+    opacity: 0;
+    transition: .5s;
+}
+.work-block:hover .first {
+    opacity: 0;
+    transition: .5s;
+    /*animation: opacity .3s;*/
+}
+.work-block:hover .second {
+    opacity: 1;
+    transition: .5s;
+}
+@keyframes opacity {
+    from {
+        opacity: 1;
+        /*transition: .3s;*/
+    }
+    to {
+        opacity: 0;
+        /*transition: .3s;*/
+    }
+}
 @media (min-width: 1900px) {
     .work-block {
         width: 30%;

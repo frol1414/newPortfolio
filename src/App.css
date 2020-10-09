@@ -77,8 +77,8 @@ p {
 }
 @media (max-width: 768px) {
   .logo {
-    left: -243px;
-    top: -530px;
+    left: -200px;
+    top: -475px;
   }
   .logo img {
     width: 800px;
@@ -87,10 +87,9 @@ p {
   .logo__title {
     font-size: 60px;
     line-height: 70px;
-    bottom: 95px;
-    right: 200px;
-    max-width: 330px;
-    text-align: right;
+    bottom: 115px;
+    right: 120px;
+    max-width: 470px;
   }
   .page__title {
     font-size: 50px;
@@ -123,9 +122,9 @@ p {
   .logo__title {
     font-size: 60px;
     line-height: 70px;
-    bottom: 95px;
+    bottom: 50px;
     right: 200px;
-    max-width: 330px;
+    max-width: 285px;
     text-align: right;
   }
   .page__title {

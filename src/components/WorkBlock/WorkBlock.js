@@ -11,7 +11,8 @@ const WorkBlock = props => {
           <p className="work-block__desc">{props.data.mainTech}</p>
       </div>
       <div className="work-block__img">
-        <img src={props.data.mainImage}  alt={props.data.title}/>
+        <img className="first" src={props.data.mainImage}  alt={props.data.title}/>
+        <img className="second" src={props.data.mainImage2}  alt={props.data.title}/>
       </div>
     </NavLink>
   )};

@@ -74,7 +74,7 @@
     }
     .main__title {
         position: absolute;
-        top: 80px;
+        top: 120px;
         right: 0;
         z-index: 4;
         color: #ffffff!important;
@@ -84,7 +84,7 @@
     }
     .main__prof-title {
         position: absolute;
-        top: 275px;
+        top: 300px;
         right: 0;
         z-index: 4;
         font-weight: 900;
