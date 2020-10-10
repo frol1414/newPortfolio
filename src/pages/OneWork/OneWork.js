@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import './OneWork.css'
 import {useSelector} from "react-redux";
 import {NavLink} from "react-router-dom";
@@ -9,6 +9,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const OneWork = props => {
+  const [loading, setLoading] = useState(true)
+  useEffect(() => setLoading(false), [])
   const id = props.match.params.id;
   const work = useSelector(state => state.works.find(el => el.id === +id));
   let settings = {
@@ -24,6 +26,7 @@ const OneWork = props => {
   };
   
   return (
+    !loading ? (
     <div className="one-work">
       <div className="logo">
         <NavLink to="/" className="logo__title">Alexander Frolov</NavLink>
@@ -73,6 +76,7 @@ const OneWork = props => {
         </a>
       </div>
     </div>
+    ) : null
     )};
 
 export default OneWork

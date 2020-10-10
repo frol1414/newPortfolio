@@ -1,6 +1,7 @@
 .main {
     position: relative;
     padding: 300px 0;
+    animation: opacity .5s;
 }
 .main-logo {
     position: absolute;

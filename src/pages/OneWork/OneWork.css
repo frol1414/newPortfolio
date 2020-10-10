@@ -1,6 +1,7 @@
 .one-work {
-    padding: 300px 0;
+    padding: 370px 0;
     position: relative;
+    animation: opacity .5s;
 }
 .work-preview {
     height: 550px;
@@ -113,9 +114,21 @@
     font-weight: 500;
 }
 @media (min-width: 1900px) {
-    .work-block {
-        width: 30%;
-        margin: 0 1.5% 60px 1.5%;
+    .work-preview {
+        margin-bottom: 300px;
+    }
+    .one-work {
+        padding: 400px 0;
+    }
+    .slider-dots {
+        position: absolute;
+        bottom: -55px;
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
     }
 }
 @media (max-width: 768px) {

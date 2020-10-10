@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {connect} from "react-redux";
 import './About.css'
 import AboutBlock from "../../components/AboutBlock/AboutBlock";
@@ -9,8 +9,11 @@ import PhotoBlock from "../../components/PhotoBlock/PhotoBlock";
 
 const About = props => {
   const renderSkills = (value) => value.list.map((el) => <li className="skills__item" key={el.id}> {el.title} </li>)
-
+  const [loading, setLoading] = useState(true)
+  useEffect(() => setLoading(false), [])
+  
   return (
+    !loading ? (
     <div className="about">
       <div className="logo">
         <NavLink to="/" className="logo__title">Alexander Frolov</NavLink>
@@ -69,6 +72,7 @@ const About = props => {
         <FactsBlock data={props.facts}/>
       
     </div>
+    ) : null
   )};
 
 const mapStateToProps = ({skills, other}) => {

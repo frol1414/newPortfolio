@@ -1,6 +1,7 @@
 .works {
     padding: 300px 0;
     position: relative;
+    animation: opacity .5s;
 }
 .works-wrapper {
     display: flex;

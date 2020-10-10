@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import './Main.css'
 import WorkBlock from "../../components/WorkBlock/WorkBlock";
 import {connect} from "react-redux";
@@ -8,8 +8,11 @@ import alex from "../../images/Alex.svg";
 
 const Main = props => {
   const renderWorks = () => props.works.filter(item => item.main).map((el) => (<WorkBlock data={el} key={el.id}/>))
+  const [loading, setLoading] = useState(true)
+  useEffect(() => setLoading(false), [])
   
   return (
+    !loading ? (
     <div className="main">
       
       <div className="main-logo">
@@ -38,6 +41,7 @@ const Main = props => {
 
     <NavLink to='/works' className="main-works__btn">See all my works</NavLink>
     </div>
+    ):null
   )};
 
 const mapStateToProps = (state) => ({works: state.works})

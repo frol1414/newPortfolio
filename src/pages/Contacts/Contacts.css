@@ -1,6 +1,7 @@
 .contacts {
     padding: 300px 0;
     position: relative;
+    animation: opacity .5s;
 }
 .contacts-wrapper {
     display: flex;

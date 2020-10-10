@@ -1,6 +1,7 @@
 .about {
     padding: 300px 0;
     position: relative;
+    animation: opacity .5s;
 }
 .about-header__desc {
     bottom: 0!important;
