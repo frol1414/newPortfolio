@@ -78,8 +78,12 @@ const initialState = [
     ],
     stack: ['Javascript', 'Vue.js / Vuex', 'PHP (Laravel)', 'PostgreSQL'],
     mainTech: 'Vue.js',
-    images: [],
-    mainImage: `${url}tips/main.jpg`,
+    images: [`${url}tips/1.png`, `${url}tips/2.png`, `${url}tips/3.png`, `${url}tips/4.png`,
+      `${url}tips/5.png`, `${url}tips/6.png`, `${url}tips/7.png`, `${url}tips/8.png`,
+      `${url}tips/9.png`, `${url}tips/10.png`, `${url}tips/11.png`, `${url}tips/12.png`],
+    mainImage: `${url}tips/main.png`,
+    mainImage2: `${url}tips/main2.png`,
+    imagesWidth: '90%',
     github: null,
     url: 'http://evolpay.ru/tips',
     main: true,
@@ -99,8 +103,10 @@ const initialState = [
     ],
     stack: ['Javascript', 'jQuery', 'PHP (Laravel)', 'PostgreSQL', 'Bootstrap 4',],
     images: [`${url}evolpay/1.png`, `${url}evolpay/2.png`, `${url}evolpay/3.png`, `${url}evolpay/4.png`,
-      `${url}evolpay/5.png`, `${url}evolpay/6.png`, `${url}evolpay/7.png`, `${url}evolpay/8.png`],
+      `${url}evolpay/5.png`, `${url}evolpay/6.png`, `${url}evolpay/7.png`, `${url}evolpay/8.png`,
+      `${url}evolpay/9.png`, `${url}evolpay/10.png`],
     mainImage: `${url}evolpay/main.png`,
+    mainImage2: `${url}evolpay/main2.png`,
     imagesWidth: '90%',
     github: null,
     url: 'http://evolpay.ru',
@@ -123,6 +129,7 @@ const initialState = [
       `${url}evoldonate/5.png`, `${url}evoldonate/6.png`, `${url}evoldonate/7.png`, `${url}evoldonate/8.png`,
       `${url}evoldonate/9.png`, `${url}evoldonate/10.png`, `${url}evoldonate/11.png`, `${url}evoldonate/12.png`],
     mainImage: `${url}evoldonate/main.png`,
+    mainImage2: `${url}evoldonate/main2.png`,
     imagesWidth: '90%',
     github: null,
     url: 'http://evolpay.ru',
@@ -149,7 +156,7 @@ const initialState = [
     class: 'yellow'
   },
   {
-    id: 5,
+    id: 13,
     title: 'Shopping List',
     mainTech: 'Vue.js',
     desc: `Service of shopping lists that can be edited by several users. Lists can be sent to other users. In
@@ -161,38 +168,18 @@ const initialState = [
       "I wrote a service in an adaptive format",
       "Created like PWA"
     ],
-    stack: ['Javascript', 'Vue.js / Vuex', 'PHP (Laravel)', 'PostgreSQL', "Bootstrap 4"],
-    images: [`${url}home-wallet/1.jpg`, `${url}home-wallet/2.jpg`, `${url}home-wallet/3.jpg`,
-      `${url}home-wallet/4.jpg`, `${url}home-wallet/5.jpg`],
-    mainImage: ``,
-    imagesWidth: '90%',
+    stack: ['Javascript', 'Vue.js / Vuex', 'PHP (Laravel)', 'PostgreSQL'],
+    images: [`${url}shopping-list/1.png`, `${url}shopping-list/2.png`, `${url}shopping-list/3.png`, `${url}shopping-list/4.png`,
+      `${url}shopping-list/5.png`, `${url}shopping-list/6.png`, `${url}shopping-list/7.png`, `${url}shopping-list/8.png`,],
+    mainImage: `${url}shopping-list/main.png`,
+    mainImage2: `${url}shopping-list/main2.png`,
+    imagesWidth: '40%',
     github: null,
     url: null,
     main: true,
-    class: 'yellow'
+    class: 'blue'
   },
-  {
-    id: 5,
-    title: 'My portfolio',
-    mainTech: 'React.js',
-    desc: `Portfolio with a short description of me and a list of my works`,
-    myWork: [
-      'Completely wrote the Frontend and Backend part for this project.',
-      "I wrote a service in an adaptive format"
-    ],
-    stack: ['React.js', 'Redux'],
-    images: [`${url}home-wallet/1.jpg`, `${url}home-wallet/2.jpg`, `${url}home-wallet/3.jpg`,
-      `${url}home-wallet/4.jpg`, `${url}home-wallet/5.jpg`],
-    mainImage: ``,
-    imagesWidth: '50%',
-    github: null,
-    url: null,
-    main: true,
-    class: 'yellow'
-  },
-
 ]
-
 
 export default function worksReducer(state = initialState, action) {
   return state
