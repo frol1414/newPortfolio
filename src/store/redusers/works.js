@@ -32,9 +32,10 @@ const initialState = [
       "Created like PWA"
     ],
     stack: ['Javascript', 'Vue.js / Vuex', 'PHP (Laravel)', 'PostgreSQL'],
-    images: ['/images/works/trm.evolpay/1.jpg', '/images/works/trm.evolpay/2.jpg', '/images/works/trm.evolpay/3.jpg',
-      '/images/works/trm.evolpay/4.jpg', '/images/works/trm.evolpay/5.jpg', '/images/works/trm.evolpay/6.jpg'],
-    mainImage: '/images/works/trm.evolpay/1.jpg',
+    images: [`${url}terminal/1.png`, `${url}terminal/2.png`, `${url}terminal/3.png`, `${url}terminal/4.png`,
+      `${url}terminal/5.png`, `${url}terminal/6.png`, `${url}terminal/7.png`, `${url}terminal/8.png`],
+    mainImage: `${url}terminal/main.png`,
+    mainImage2: `${url}terminal/main2.png`,
     imagesWidth: '50%',
     github: null,
     url: null,
