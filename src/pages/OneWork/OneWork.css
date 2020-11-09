@@ -1,24 +1,35 @@
 .one-work {
-    padding: 370px 0;
+    padding: 370px 0 0 0;
     position: relative;
+    -webkit-animation: opacity .5s;
     animation: opacity .5s;
 }
 .work-preview {
     height: 550px;
     margin-bottom: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .work-images {
     width: 50%;
     height: 700px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-top: -73px;
 }
 .work__img {
     margin: 20px auto;
     border-radius: 10px;
+    -webkit-box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.35);
     box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.35);
 }
 .slider-dots {
@@ -66,8 +77,15 @@
 .work-technical-sheet {
     width: 45%;
     margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     height: 100%;
 }
@@ -106,6 +124,7 @@
     display: block;
     overflow: hidden;
     white-space: nowrap;
+    -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     text-decoration: none;
     margin-bottom: 5px;
@@ -118,7 +137,7 @@
         margin-bottom: 300px;
     }
     .one-work {
-        padding: 400px 0;
+        padding: 400px 0 0 0;
     }
     .slider-dots {
         position: absolute;
@@ -133,7 +152,7 @@
 }
 @media (max-width: 768px) {
     .one-work {
-        padding: 300px 0 50px 0;
+        padding: 300px 0 0 0;
     }
     .work-preview {
         margin-bottom: 100px;
@@ -161,28 +180,42 @@
 }
 @media (max-width: 414px) {
     .one-work {
-        padding: 300px 0 50px 0;
+        padding: 300px 0 0 0;
     }
     .work-preview {
         margin-bottom: 50px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
     .work-images {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
         order: 2;
         width: 100%;
         margin-top: 0;
     }
     .work-technical-sheet {
         height: auto;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         padding: 20px 0;
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
         order: 1;
         width: 100%;
     }
     .work-technical-sheet ul {
         margin: 5px 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
     .technical-sheet__title {
@@ -209,6 +242,8 @@
 }
 @media (max-width: 375px) {
     .work-images {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
         order: 2;
         width: 100%;
         margin-top: -30px;

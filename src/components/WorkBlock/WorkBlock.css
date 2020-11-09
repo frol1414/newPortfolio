@@ -3,26 +3,43 @@
     width: 46%;
     border-radius: 10px;
     margin: 0 2% 60px 2%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.25);
     box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.25);
     cursor: pointer;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
     text-decoration: none;
     overflow: hidden;
 }
 .work-block:hover {
+    -webkit-box-shadow: none;
     box-shadow: none;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
     text-decoration: none;
 }
 .work-block:hover .work-block__title,
 .work-block:hover .work-block__desc {
     text-shadow: 1px 1px 5px rgba(45, 45, 45, .5);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 .work-block__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding-left: 25px;
 }
@@ -32,6 +49,8 @@
     line-height: 33px;
     color: #FFFFFF;
     margin-bottom: 8px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 .work-block__desc {
@@ -39,35 +58,59 @@
     font-size: 22px;
     line-height: 27px;
     color: #FFFFFF;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 .work-block__img {
     position: relative;
     margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
 }
 .work-block__img img {
     position: absolute;
     right: 0;
     bottom: 0;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
 }
 .work-block__img .first {
     opacity: 1;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 }
 .work-block__img .second {
     opacity: 0;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 }
 .work-block:hover .first {
     opacity: 0;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 }
 .work-block:hover .second {
     opacity: 1;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
+}
+@-webkit-keyframes opacity {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 @keyframes opacity {
     from {

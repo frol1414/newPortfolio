@@ -1,5 +1,5 @@
 import React from "react";
-import aboutMeImg from "../../images/222.JPG"
+import aboutMeImg from "../../images/222.webp"
 import './AboutBlock.css'
 
 const AboutBlock = props => {

@@ -4,15 +4,15 @@ import {NavLink} from "react-router-dom";
 import './Header.css'
 
 const Header = props => {
-  
+
   return (
-    <div className="header">
+    <header className="header">
       <div className="header-list">
-        <NavLink to="/about" className="header-list__item item-about">About</NavLink>
-        <NavLink to="/works" className="header-list__item item-works">Works</NavLink>
-        <NavLink to="/contacts" className="header-list__item item-contacts">Contacts</NavLink>
+        <NavLink to="/about" aria-label="About" className="header-list__item item-about">About</NavLink>
+        <NavLink to="/works" aria-label="Works" className="header-list__item item-works">Works</NavLink>
+        <NavLink to="/contacts" aria-label="Contacts" className="header-list__item item-contacts">Contacts</NavLink>
       </div>
-    </div>
+    </header>
   )};
 
 export default Header;

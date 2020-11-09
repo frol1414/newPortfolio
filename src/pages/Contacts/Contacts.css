@@ -1,23 +1,37 @@
 .contacts {
     padding: 300px 0;
     position: relative;
+    -webkit-animation: opacity .5s;
     animation: opacity .5s;
 }
 .contacts-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 .contacts-phone {
     width: 63%;
     max-height: 370px;
     border-radius: 0 10px 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding-left: 70px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-.contacts-phone p {
+.contacts-phone p,
+.contacts-phone a {
     font-weight: 900;
     font-size: 50px;
     line-height: 59px;
@@ -33,9 +47,15 @@
     width: 35%;
     max-height: 370px;
     border-radius: 10px 0 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding: 26px 70px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 .contacts-socials a {
@@ -44,10 +64,15 @@
     font-weight: 900;
     font-size: 50px;
     line-height: 59px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
-.contacts-socials a:hover {
+.contacts-socials a:hover,
+.contacts-phone a:hover {
     color: #212121;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 @media (max-width: 768px) {
@@ -55,14 +80,20 @@
         padding: 300px 0 50px 0;
     }
     .contacts-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
     .contacts-phone {
         padding: 20px 0 20px 50px;
         margin-bottom: 20px;
     }
-    .contacts-phone p {
+    .contacts-phone p,
+    .contacts-phone a {
         font-size: 30px;
         line-height: 33px;
         margin: 10px 0;
@@ -88,7 +119,8 @@
         padding: 10px 0 10px 50px;
         margin-bottom: 20px;
     }
-    .contacts-phone p {
+    .contacts-phone p,
+    .contacts-phone a {
         font-size: 18px;
         line-height: 21px;
         margin: 10px 0;

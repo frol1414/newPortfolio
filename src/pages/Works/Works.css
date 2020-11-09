@@ -1,10 +1,14 @@
 .works {
-    padding: 300px 0;
+    padding: 300px 0 0 0;
     position: relative;
+    -webkit-animation: opacity .5s;
     animation: opacity .5s;
 }
 .works-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 @media (max-width: 768px) {

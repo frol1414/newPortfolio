@@ -1,11 +1,11 @@
 const initialState = {
   photos: [
-    {img: '/images/photo/1.jpg', class: "blue"},
-    {img: '/images/photo/2.jpg', class: "pink"},
-    {img: '/images/photo/3.jpg', class: "yellow"},
-    {img: '/images/photo/4.jpg', class: "yellow"},
-    {img: '/images/photo/5.jpg', class: "pink"},
-    {img: '/images/photo/6.jpg', class: "blue"},
+    {img: '/images/photo/1.webp', class: "blue"},
+    {img: '/images/photo/2.webp', class: "pink"},
+    {img: '/images/photo/3.webp', class: "yellow"},
+    {img: '/images/photo/4.webp', class: "yellow"},
+    {img: '/images/photo/5.webp', class: "pink"},
+    {img: '/images/photo/6.webp', class: "blue"},
   ],
   facts: [
     {title: 'I love to code ... if I do not write, then I am dreaming', desc: "or eating or traveling", class: 'blue'},

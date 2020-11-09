@@ -4,6 +4,7 @@ import './Works.css'
 import WorkBlock from "../../components/WorkBlock/WorkBlock";
 import alex from "../../images/Alex.svg";
 import {NavLink} from "react-router-dom";
+import Footer from "../../components/Footer/Footer";
 
 const Works = props => {
   const renderWorks = () => props.works.map((el) => (<WorkBlock data={el} key={el.id}/>))
@@ -11,21 +12,23 @@ const Works = props => {
   useEffect(() => setLoading(false), [])
   return (
     !loading ? (
-      <div className="works">
-    
+      <main className="works">
+
         <div className="logo">
           <NavLink to="/" className="logo__title">Alexander Frolov</NavLink>
           <img src={alex} alt='Frolov Alexander'/>
         </div>
-    
+
         <p className="page__title">Works</p>
-    
+
         <div className="works-wrapper">
           {renderWorks()}
         </div>
-      </div>
+
+        <Footer />
+      </main>
       ) : null
-    
+
   )};
 
 const mapStateToProps = (state) => ({works: state.works})

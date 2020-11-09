@@ -7,6 +7,7 @@ import Slider from "react-slick";
 // import "/"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Footer from "../../components/Footer/Footer";
 
 const OneWork = props => {
   const [loading, setLoading] = useState(true)
@@ -24,17 +25,17 @@ const OneWork = props => {
     arrows: false,
     fade: true,
   };
-  
+
   return (
     !loading ? (
-    <div className="one-work">
+    <main className="one-work">
       <div className="logo">
         <NavLink to="/" className="logo__title">Alexander Frolov</NavLink>
         <img src={alex} alt='Frolov Alexander'/>
       </div>
-      
+
       <p className="page__title">{work.title}</p>
-      
+
       <div className="work-preview yellow">
         <div className="work-images">
           <Slider {...settings}>
@@ -45,7 +46,7 @@ const OneWork = props => {
               ))}
           </Slider>
         </div>
-        
+
         <div className="work-technical-sheet">
           <p className="technical-sheet__title">Technical Sheet</p>
           <ul>
@@ -53,19 +54,19 @@ const OneWork = props => {
           </ul>
         </div>
       </div>
-      
+
       <div className="work-info-block">
         <p className="work-info__title">About this project</p>
         <p className="work-info__desc">{work.desc}</p>
       </div>
-      
+
       <div className="work-info-block">
         <p className="work-info__title">My work in this project</p>
         <ul>
           {work.myWork.map((el, idx) => <li className="work-info__desc" key={idx}>{el}</li> )}
         </ul>
       </div>
-  
+
       <div className="work-info-block">
         <p className="work-info__title">Resources</p>
         <a className="work-info__desc work-info__link"  href={work.github || null} target="_blank" rel="noopener noreferrer">
@@ -75,7 +76,9 @@ const OneWork = props => {
           <span>Url: </span> {work.url || 'Private project'}
         </a>
       </div>
-    </div>
+
+      <Footer />
+    </main>
     ) : null
     )};
 

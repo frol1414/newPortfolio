@@ -1,6 +1,7 @@
 .main {
     position: relative;
-    padding: 300px 0;
+    padding: 300px 0 0 0;
+    -webkit-animation: opacity .5s;
     animation: opacity .5s;
 }
 .main-logo {
@@ -25,13 +26,22 @@
 }
 .main-works {
     padding: 0 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 .main-works__btn,
 .main-about__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 500px;
     height: 70px;
@@ -42,6 +52,8 @@
     text-align: center;
     border-radius: 5px;
     text-decoration: none;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 .main-works__btn {
@@ -52,6 +64,8 @@
 .main-works__btn:hover {
     background: #4DB4ED;
     color: #ffffff;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 .main-about__btn {
@@ -62,11 +76,13 @@
 .main-about__btn:hover {
     background: #FAC606;
     color: #ffffff;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 @media (max-width: 768px) {
     .main {
-        padding: 735px 0 100px 0;
+        padding: 735px 0 0 0;
         position: relative;
     }
     .main-logo {
@@ -134,7 +150,12 @@
     .main-works {
         padding: 0 20px;
         margin-top: 20px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
     .main-works__btn,
