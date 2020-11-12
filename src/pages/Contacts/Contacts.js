@@ -19,7 +19,7 @@ const Contacts = props => {
         <div className="contacts-phone yellow">
           <p>E-mail: <span>frol1414@gmail.com</span></p>
           <p>Phone: <span>+7(931)971-55-83</span></p>
-          <a href='https://drive.google.com/drive/folders/1u-7bNbZAC-EPjc3TdYq6Z1utMMFe7FAV' target='_blank'
+          <a href='https://drive.google.com/drive/folders/1u-7bNbZAC-EPjc3TdYq6Z1utMMFe7FAV?usp=sharing' target='_blank'
              rel='noopener noreferrer'>Download Resume</a>
         </div>
 

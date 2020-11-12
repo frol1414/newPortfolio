@@ -2,15 +2,16 @@ const url = '/images/works/'
 const initialState = [
   {
     id: 1,
-    title: 'Tips',
+    title: 'EvolTips',
     desc: `Service for providing the ability to accept tips in a contactless way (by QR-code, nfc, following the link)`,
     myWork: [
       'I Worked out the architecture of the project frontend',
-      'I Completely wrote the Frontend part for this project for API back-end developers',
-      'I Created a constructor that allows you to create your own unique business card. A lot of fields, pictures, colors, inscriptions are configured, with the provision of a preview in real time',
-      'I wrote various components that were later used in other projects',
-      'Developed a database architecture with back-end developers',
-      'I wrote a service in an adaptive format',
+      'completely wrote the Frontend part for this project for API back-end developers',
+      'created a constructor that allows you to create your own unique business card. A lot of fields, pictures, colors, inscriptions are configured, with the provision of a preview in real time',
+      'wrote various components that were later used in other projects',
+      'developed a database architecture with back-end developers',
+      'wrote a service in an adaptive format',
+      'wrote the landing page',
     ],
     stack: ['Javascript', 'Vue.js / Vuex', 'PHP (Laravel)', 'PostgreSQL'],
     mainTech: 'Vue.js',
@@ -21,7 +22,7 @@ const initialState = [
     mainImage2: `${url}tips/main2.webp`,
     imagesWidth: '90%',
     github: null,
-    url: 'http://evolpay.ru/tips',
+    url: 'https://evolpay.ru',
     main: true,
     class: 'blue'
   },
@@ -32,10 +33,10 @@ const initialState = [
     desc: `A service for receiving funds for any field of activity without the cost of equipment using QR-codes.
              The project is aimed at merchant acquiring, Internet acquiring, couriers, self-service machines, etc`,
     myWork: [
-      'Created the main site according to the layout of the designer',
-      'Created about 90% of the Frontend of the client side',
-      'Created the CRUD system for most of the client-side entities on the Backend',
-      'Developed a database architecture with back-end developer',
+      'I wrote the landing page',
+      'created about 90% of the Frontend of the client side',
+      'created the CRUD system for most of the client-side entities on the Backend',
+      'developed a database architecture with back-end developer',
     ],
     stack: ['Javascript', 'jQuery', 'PHP (Laravel)', 'PostgreSQL', 'Bootstrap 4',],
     images: [`${url}evolpay/1.webp`, `${url}evolpay/2.webp`, `${url}evolpay/3.webp`, `${url}evolpay/4.webp`,
@@ -45,7 +46,7 @@ const initialState = [
     mainImage2: `${url}evolpay/main2.webp`,
     imagesWidth: '90%',
     github: null,
-    url: 'http://evolpay.ru',
+    url: 'https://evolpay.ru',
     main: true,
     class: 'yellow'
   },
@@ -56,8 +57,9 @@ const initialState = [
     desc: `An application for couriers and retail outlets to display a QR-code for payment to customers. The
             application contains statistics on operations, history of operations, the choice of various organizations and units.`,
     myWork: [
-      "I wrote a service in an adaptive format",
-      "Created like PWA"
+      'I completely wrote the Frontend part for this project for API back-end developers',
+      "wrote a service in an adaptive format",
+      "created like PWA"
     ],
     stack: ['Javascript', 'Vue.js / Vuex', 'PHP (Laravel)', 'PostgreSQL'],
     images: [`${url}terminal/1.webp`, `${url}terminal/2.webp`, `${url}terminal/3.webp`, `${url}terminal/4.webp`,
@@ -74,12 +76,12 @@ const initialState = [
     id: 4,
     title: 'Evoldonate',
     mainTech: 'Vue.js',
-    desc: ``,
+    desc: `Streaming service`,
     myWork: [
-      'Worked out the architecture of the project frontend',
-      'Completely wrote the Frontend part for this project for API back-end developers',
-      'Introduced multi-graphics into the project',
-      "Created like PWA"
+      'I Worked out the architecture of the project frontend',
+      'completely wrote the Frontend part for this project for API back-end developers',
+      'introduced multi-graphics into the project',
+      "created like PWA"
     ],
     stack: ['Javascript', 'Vue.js / Vuex', 'PHP (Laravel)', 'PostgreSQL', "Bootstrap 4"],
     images: [`${url}evoldonate/1.webp`, `${url}evoldonate/2.webp`, `${url}evoldonate/3.webp`, `${url}evoldonate/4.webp`,
@@ -89,7 +91,7 @@ const initialState = [
     mainImage2: `${url}evoldonate/main2.webp`,
     imagesWidth: '90%',
     github: null,
-    url: 'http://evolpay.ru',
+    url: 'Project in development',
     main: true,
     class: 'pink'
   },
@@ -101,10 +103,10 @@ const initialState = [
     addition to the lists, you can scan the discount card with your phone camera and add it to the list on your
     phone, to be displayed in the store from your phone. Cards can be shared.`,
     myWork: [
-      'Worked out the architecture of the project frontend',
-      'Completely wrote the Frontend part for this project for API back-end developers',
-      "I wrote a service in an adaptive format",
-      "Created like PWA"
+      'I worked out the architecture of the project frontend',
+      'completely wrote the Frontend part for this project for API back-end developers',
+      "wrote a service in an adaptive format",
+      "created like PWA"
     ],
     stack: ['Javascript', 'Vue.js / Vuex', 'PHP (Laravel)', 'PostgreSQL'],
     images: [`${url}shopping-list/1.webp`, `${url}shopping-list/2.webp`, `${url}shopping-list/3.webp`, `${url}shopping-list/4.webp`,
@@ -112,8 +114,8 @@ const initialState = [
     mainImage: `${url}shopping-list/main.webp`,
     mainImage2: `${url}shopping-list/main2.webp`,
     imagesWidth: '40%',
-    github: null,
-    url: null,
+    github: 'https://github.com/frol1414/Shopping-list',
+    url: 'Project in development',
     main: true,
     class: 'blue'
   },
@@ -123,11 +125,11 @@ const initialState = [
     desc: `Admin panel for the Evolpay project with viewing all statistics on any project entities,
       the ability to administer and adjust some entities`,
     myWork: [
-      'Worked out the architecture of the project frontend',
-      'Completely wrote the Frontend part for this project for API back-end developers',
-      'Created a single custom component for all tables in the project',
-      'Introduced multi-graphics into the project',
-      'Developed a database architecture with back-end developers',
+      'I worked out the architecture of the project frontend',
+      'completely wrote the Frontend part for this project for API back-end developers',
+      'created a single custom component for all tables in the project',
+      'introduced multi-graphics into the project',
+      'developed a database architecture with back-end developers',
     ],
     stack: ['Javascript', 'Vue.js / Vuex', 'PHP (Laravel)', 'PostgreSQL'],
     mainTech: 'Vue.js',
@@ -136,7 +138,7 @@ const initialState = [
     mainImage2: `${url}evolpay-admin/main2.webp`,
     imagesWidth: '90%',
     github: null,
-    url: null,
+    url: 'Private access',
     main: false,
     class: 'pink'
   },
