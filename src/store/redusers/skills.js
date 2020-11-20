@@ -40,7 +40,7 @@ const initialState = {
     focus: false,
     list: [
       {id: 1, title: 'Javascript'},
-      {id: 2, title: 'Typescript'},
+      // {id: 2, title: 'Typescript'},
       {id: 3, title: 'Linux'},
       {id: 4, title: 'Github'},
       {id: 5, title: 'Webpack'},
